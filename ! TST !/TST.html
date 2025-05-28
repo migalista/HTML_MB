@@ -1,0 +1,136 @@
+<DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title> ! TST ! </title>
+</head>
+
+
+
+<body>
+    <h1> Pagina teste de aprendizado ao HTML </h1> <!-- Isso é um Titulo-->
+    
+    <h2> HTML é muito dificil </h2> <!-- Isso é um Subtitulo -->
+
+    <p> Estou na tentativa de melhorar as minhas capacidades em programação e criação de sites envolvendo HTML e CSS! </p> <!-- Isso é um Paragrafo-->
+    
+    <p> Por conta da minha defasagem em aulas de WEB I, estou tendo que correr atras, muitas coisas foram perdidas mas nem tudo está perdido! </p> <!-- Isso é um Paragrafo -->
+
+    <br> <!-- Quebra de linha -->
+    <hr>
+    <em><strong> "A maior glória não é nunca cair, mas levantar-se sempre que se cai." - Confúcio </strong><br></em> <!-- <em> Deixa o texto em italico e <strong> deixa o texto em negrito -->
+    <hr>
+    <br> <!-- Quebra de linha -->
+
+    <p> O meu Git Hub Estara disponivel caso queira ver alguns dos meus repositorios! <a href="https://github.com/migalista?tab=repositories" target="_blank"> Meu GitHub! </a> </p>
+    <img src="cachorro do leo.jpg" alt="Cachorro do leo" width="300"> <p> O cachorro do Leo ai! </p>
+
+    <h3> Vamos ver sobre listas, começando por listas não ordenadas! </h3>
+    <ul>
+        <li> Pão </li>
+        <li> Leite </li>
+        <li> Café </li>
+    </ul>
+    <p> Ela ficam em formato de bolinha antes das palavras! </p>
+
+    <h3> Agora as Ordenadas! </h3>
+    <ol>
+        <li> Queijo </li>
+        <li> Presunto </li>
+        <li> Chá </li>
+    </ol>
+    <p> Ela fica nesse formato numerico, com a pontuação dos pontos, oque faz ela ser Ordenada! </p>
+    <hr>
+    
+    <h2> Mudança na escrita! </h2>
+    <p> É possivel deixar os textos em negrito ou em itálico de usando TAGS como a <strong> strong </strong> ou a <em> em </em> </p>
+    <hr>
+    <h2> ! TABELAS ! </h2>
+    <p> A pior parte de todo a HTML com toda certeza são as tabelas, alem de serem complicadas de entender, não fazem muito sentido logico na mente de um programador que ja mecheu com outras linguagens que trabalham mais com a logica </p>
+    <br>
+    <table border="1">
+        <tr>
+            <th> Nome </th>
+            <th> Idade </th>
+            <th> Cidade </th>
+        </tr>
+        <tr>
+            <td> João </td>
+            <td> 25 </td>
+            <td> São Paulo </td>
+        </tr>
+        <tr>
+            <td> Maria </td>
+            <td> 20 </td>
+            <td> <strong> Rio de Janeiro </strong> </td>
+        </tr>
+    </table>
+
+    <p> A tag TH seria <strong>Table Header</strong>, é ela que adiciona o topo da tabela que nesse caso é Nome, Cidade, Idade.</p>
+    <p> Já o TD ou <strong> Table Data </strong> seria as informações da tabela </p>
+    <p> O TR ou <strong> Table Row </strong> cria uma linha na tabela que permite adicionar novos dados, então para que você possa utilizar essa linha, você precisa primeiro abrir o TR (TableRow) e dentro do TR você utiliza o TD (TableData) </p>
+    <h2> Resumão do funcionamento basico da criação das tabelas! </h2>
+    <p> A personalização é mais dificil :( </p>
+    <p> Uma tabela pode ter Cabeçalho tambem, que pode ser criado com a tag <strong> thead </strong> ou um corpo personalizado com a tag <strong> tbody </strong>, personalizar o rodapé com <strong> tfoot </strong>, é possivel tambem mesclar as colunas e linhas, para mesclar as colunas é nescessario usar <strong> colspan </strong>, e para as linhas é nescessario utilizar <strong> rowspan </strong> </p>
+    <p> Segue um exemplo com todas as tags abaixo </p>
+    <hr>
+<table border="1">
+
+    <thead>
+        <tr>
+            <th rowspan="2">Aluno</th>
+            <th rowspan="2">Matéria</th>
+            <th colspan="2">Notas</th>
+            <th rowspan="2">Média</th>
+        </tr>
+        <tr>
+            <th>Nota 1</th>
+            <th>Nota 2</th>
+        </tr>
+    </thead>
+
+
+    <tbody>
+        <tr>
+            <td rowspan="2">João</td>
+            <td>Matemática</td>
+            <td>8</td>
+            <td>7</td>
+            <td>7.5</td>
+        </tr>
+        <tr>
+            <td>Português</td>
+            <td>9</td>
+            <td>8</td>
+            <td>8.5</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Maria</td>
+            <td>Matemática</td>
+            <td>7</td>
+            <td>8</td>
+            <td>7.5</td>
+        </tr>
+        <tr>
+            <td>Português</td>
+            <td>10</td>
+            <td>9</td>
+            <td>9.5</td>
+        </tr>
+    </tbody>
+
+
+    <tfoot>
+            <tr>
+                <td colspan="4">Média Geral da Turma</td>
+                <td>8.25</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <p> De acordo com a tabela acima, é possivel entender como funciona o enquadramento de todas as tags possiveis dentro das tabelas, estão sendo utilizadas todas as TAGS </p>
+
+
+
+</body>
+</html>
