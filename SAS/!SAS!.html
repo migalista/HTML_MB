@@ -1,0 +1,327 @@
+<!DOCTYPE html> <!-- Declara que esse é um documento HTML 5-->
+<html lang="pt-br"> <!-- Declara o idioma do documento -->
+    <head>
+        <meta charset="UTF-8"> <!-- Define a codificação de caracteres, essencial para assentos -->
+        <title> !SAS! HTML + CSS </title> <!-- Define o título da página que aparece na aba do navegador -->
+    
+        <!-- CSS Interno -->
+
+        <!-- Estilo do corpo do site -->
+        <style>
+            body{
+                background-color: f0f8ff; /* Define a cor de fundo do corpo */
+                font-family: Arial, sans-serif; /* Define a fonte do corpo */
+                margin: 20px; /* Define a margem do corpo */
+            }
+
+            /*Cabeçalho do site*/
+            header{
+                background-color: #4682b4; /* Define a cor de fundo do cabeçalho */
+                color: white; /* Define a cor do texto do cabeçalho */
+                padding: 20px; /* Define o preenchimento do cabeçalho */
+                text-align: center; /* Alinha o texto do cabeçalho ao centro */
+                border-radius: 10px; /* Define o raio da borda do cabeçalho, deixando-as arrendodadas */
+            }
+
+            /* Estilo dos links */
+             nav{
+                background-color: #87cefa; /* Define a cor de fundo do menu de navegação */
+                padding: 10px; /* Define o preenchimento do menu de navegação */
+                margin: 10px 0; /* Define a margem do menu de navegação */
+                border-radius: 8px; /* Define o raio da borda do menu de navegação */
+             }
+
+            /* Estilo dos links do menu de navegação */
+             nav a{
+                color: white; /* Define a cor do texto dos links */
+                margin: 0 15px; /* Espaço entre os links */
+                text-decoration: none; /* Remove o sublinhado dos links */
+                font-weight: bold; /* Deixa o texto dos links em negrito */
+             }
+            /* Estilo dos links ao passar o mouse */
+             nav a:hover {
+                color: yellow; /* Muda a cor do texto dos links ao passar o mouse */
+                text-decoration: underline; /* Adiciona um sublinhado aos links ao passar o mouse */
+             }
+
+             section {
+                background-color: white
+                padding: 20px; /* Define o preenchimento da seção */
+                border-radius: 8px; /* Define o raio da borda da seção */
+                margin-bottom:: 20px; /* Define a margem inferior da seção */
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave à seção */
+             }
+
+             /* Tabelas */
+             table {
+                width: 100%; /* Define a largura da tabela */
+               border-collapse: collapse; /* Remove o espaço entre as bordas das células */
+             }
+
+             table, th, td{
+                border: 2px solid #4682b4; /* Define a cor e a espessura das bordas da tabela, cabeçalhos e células */
+             }
+             
+             /*Cabeçalho da tabela*/
+             th {
+                background-color: #f5f5f5; /* Define a cor de fundo dos cabeçalhos */ 
+                color: white; /* Define a cor do texto dos cabeçalhos */ 
+             }
+
+             /* Form */
+             form {
+                background-color: #f5f5f5;
+                padding: 20px; /* Define o preenchimento do formulário */
+                border-radius: 10px; /* Define o raio da borda do formulário */
+             }
+
+             input, select, textarea {
+                margin: 8px 0; /* Define a margem dos campos de entrada */
+                padding: 8px; /* Define o preenchimento dos campos de entrada */
+                width: 100%; /* Define a largura dos campos de entrada */
+                border: 1px solid #ccc; /* Define a cor e a espessura da borda dos campos de entrada */
+
+             }
+
+             input[type="submit"] {
+                background-color: #4682b4; /* Define a cor de fundo do botão de envio */
+                color: white; /* Define a cor do texto do botão de envio */
+                border: none; /* Remove a borda do botão de envio */
+                cursor: pointer; /* Faz o cursor virar uma mãozinha */
+             }
+
+             input[type="submit"]:hover {
+                background-color: #315f7d; /* Muda a cor de fundo do botão de envio ao passar o mouse */
+             }
+
+             /* Rodapé do site */
+             footer {
+                background-color: 4682b4; /* Define a cor de fundo do rodapé */
+                color: white; /* Define a cor do texto do rodapé */
+                text-align: center; /* Alinha o texto do rodapé ao centro */
+                padding: 10px; /* Define o preenchimento do rodapé */
+                border-radius: 10px; /* Define o raio da borda do rodapé */
+                position: fixed; /* Fixa o rodapé na parte inferior da página */
+                bottom: 0; /* Posiciona o rodapé na parte inferior da página */
+             }
+                /*Fim do CSS Interno*/
+            </style>
+        </head>
+    <body>
+
+
+        <!-- Cabeçalho do site -->
+         <header>
+            <h1 style="text-shadow: 2px 2px 5px black;"> Meu site completo com CSS + HTML </h1>
+            <p> Explorando todas as funcionalidades de HTML e CSS num só site PORRA! </p>
+         </header>
+
+         <!-- Menu de navegação com ancoras de seções -->
+          <nav>
+            <a href="#tabela">Tabela</a>
+            <a href="#formulario">Formulário</a>
+            <a href="#imagens">Imagens</a>
+            <a href="#conteudo">Conteúdo</a>
+          </nav>
+
+          <!-- Seção principal do site -->
+           <section id="conteudo">
+            <h2> Conteúdos, titulos e paragrafos</h2>
+            <p style="color: darkgreen;"> Isso é um paragrafo com cor usando CSS inline. </p> <!--Css aplicado diretamente na tag-->
+            <p><strong> Texto em negrito</strong>, <em> Texto em italico </em>, <u> Texto sublinhado </u>e <mark> Texto destacado </mark></p>      
+           </section>
+
+              <h3>Listas</h3>
+        <ul> <!-- Lista não ordenada -->
+            <li>Item da lista não ordenada</li>
+            <li>Outro item</li>
+        </ul>
+        <ol> <!-- Lista ordenada -->
+            <li>Item da lista ordenada</li>
+            <li>Segundo item</li>
+        </ol>
+    </section>
+
+    <!-- Seção de imagens -->
+    <section id="imagens">
+        <h2>Imagens</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg"
+            alt="Planeta Terra"
+            width="300"
+            style="border-radius: 15px; box-shadow: 5px 5px 15px gray;"> <!-- Imagem com borda arredondada e sombra -->
+        <p>Essa é a imagem do nosso planeta Terra.</p>
+    </section>
+
+    <!-- Seção de tabela -->
+    <section id="tabela">
+        <h2>Tabela de Exemplo</h2>
+        <table>
+            <tr> <!-- Linha do cabeçalho -->
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+            <tr> <!-- Linha de dados -->
+                <td>Maria</td>
+                <td>25</td>
+                <td>Desenvolvedora</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>30</td>
+                <td>Designer</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>22</td>
+                <td>Estudante</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Seção de formulário -->
+    <section id="formulario">
+        <h2>Formulário de Contato</h2>
+        <form action="#" method="post"> <!-- Atributo action simula envio, método POST envia dados -->
+            <label>Nome:</label>
+            <input type="text" name="nome" placeholder="Digite seu nome">
+
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Digite seu email">
+
+            <label>Senha:</label>
+            <input type="password" name="senha" placeholder="Digite sua senha">
+
+            <label>Idade:</label>
+            <input type="number" name="idade" min="0">
+
+            <label>Gênero:</label>
+            <select name="genero"> <!-- Menu suspenso -->
+                <option value="">Selecione</option>
+                <option value="masc">Masculino</option>
+                <option value="fem">Feminino</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <label>Mensagem:</label>
+            <textarea name="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea> <!-- Caixa de texto longa -->
+
+            <input type="submit" value="Enviar"> <!-- Botão de envio -->
+        </form>
+    </section>
+
+    <!-- Rodapé do site -->
+    <footer>
+        <p>&copy; 2025 Meu Site Completo. Todos os direitos reservados.</p> <!-- &copy é símbolo de copyright -->
+    </footer>
+
+
+    <!-- CHAT GPT ABAIXO -->
+     <!-- Nova seção explicando Listas, Formulários, Padding e Box Model -->
+<section id="explicacoes">
+    <h2>Funcionamento do CSS + HTML: Listas, Forms, Padding e Box Model</h2>
+
+    <!-- LISTAS -->
+    <h3>🔸 Listas</h3>
+    <p>Listas são usadas para organizar informações em tópicos, sequências ou itens.</p>
+
+    <!-- Lista não ordenada (ul) -->
+    <h4>Lista Não Ordenada (ul)</h4>
+    <ul>
+        <li>Item 1</li> <!-- Cada <li> é um item da lista -->
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <!-- Lista ordenada (ol) -->
+    <h4>Lista Ordenada (ol)</h4>
+    <ol>
+        <li>Primeiro</li>
+        <li>Segundo</li>
+        <li>Terceiro</li>
+    </ol>
+
+    <!-- Lista de definição (dl) -->
+    <h4>Lista de Definição (dl)</h4>
+    <dl>
+        <dt>HTML</dt> <!-- Termo -->
+        <dd>É a estrutura do site.</dd> <!-- Definição -->
+        <dt>CSS</dt>
+        <dd>Responsável pela aparência e estilo.</dd>
+    </dl>
+
+    <hr>
+
+    <!-- FORMULÁRIOS -->
+    <h3>🔸 Formulários (Forms)</h3>
+    <p>Formulários são usados para coletar dados do usuário, como nome, e-mail, comentários, etc.</p>
+
+    <form action="#" method="post">
+        <!-- Label associa texto ao input -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha"><br><br>
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="30"></textarea><br><br>
+
+        <!-- Seleção de opção -->
+        <label for="genero">Gênero:</label>
+        <select id="genero" name="genero">
+            <option value="feminino">Feminino</option>
+            <option value="masculino">Masculino</option>
+            <option value="outro">Outro</option>
+        </select><br><br>
+
+        <!-- Caixa de seleção -->
+        <input type="checkbox" id="termos" name="termos">
+        <label for="termos">Aceito os termos</label><br><br>
+
+        <!-- Botões -->
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+
+    <hr>
+
+    <!-- PADDING E BOX MODEL -->
+    <h3>🔸 Padding e Box Model</h3>
+    <p>No CSS, todo elemento é considerado uma caixa (Box Model). Essa caixa é composta por:</p>
+
+    <ul>
+        <li><strong>Content</strong> - O conteúdo (texto, imagem, etc.)</li>
+        <li><strong>Padding</strong> - Espaço interno entre o conteúdo e a borda</li>
+        <li><strong>Border</strong> - A borda do elemento</li>
+        <li><strong>Margin</strong> - Espaço externo, entre esse elemento e os outros</li>
+    </ul>
+
+    <p>Exemplo prático de uma caixa com padding, border e margin aplicada:</p>
+
+    <!-- Div exemplo do Box Model -->
+    <div style="background-color: lightblue; 
+                padding: 20px; 
+                border: 5px solid blue; 
+                margin: 15px;">
+        Este é um exemplo de Box Model com padding, border e margin!
+    </div>
+
+    <p>➕ Aqui:</p>
+    <ul>
+        <li><strong>Background-color:</strong> Define a cor de fundo (lightblue).</li>
+        <li><strong>Padding:</strong> 20px ➝ espaço entre o texto e a borda azul.</li>
+        <li><strong>Border:</strong> 5px solid blue ➝ uma borda azul sólida.</li>
+        <li><strong>Margin:</strong> 15px ➝ espaço externo, separando essa caixa de outros elementos.</li>
+    </ul>
+
+</section>
+
+
+
+
+</body>
+</html>     
